@@ -1,5 +1,7 @@
 package org.iesfm.calculator;
 
+import org.iesfm.calculator.exceptions.NotANumberException;
+
 import java.util.List;
 
 public class Calculator {
@@ -17,7 +19,7 @@ public class Calculator {
         return res;
     }
 
-    public static int sum2 (List<Integer> numbers){
+    public static int sum2 (List<Integer> numbers) throws NotANumberException {
         int res = 0;
 
         for (int number:
@@ -29,7 +31,7 @@ public class Calculator {
         return res;
     }
 
-    public static double media (List<Double> numbers){
+    public static double media (List<Double> numbers) throws  NotANumberException{
         double res = 0;
 
         for (int i = 0; i < numbers.size(); i++) {
